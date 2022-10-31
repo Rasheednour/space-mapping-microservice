@@ -1,13 +1,15 @@
 
+
 const express = require('express');
 const app = express();
 const router = express.Router();
+const space_objects = require('./space-objects');
 
 app.enable('trust proxy');
 
 
 router.get('/', function (req, res) {
-    res.send("Space-mapping-app");
+    res.json(space_objects);
 });
 
 
