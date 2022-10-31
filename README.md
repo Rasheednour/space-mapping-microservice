@@ -22,3 +22,5 @@ Once the POST request is sent using the above example, the response body will co
 ```
 {"time_to_dest": 878993}
 ```
+## UML
+![UML!](C:\Users\Rasheed Mohammed\Desktop\OSU\CS361\Week 5\space-mapping-microservice\UML.png)
