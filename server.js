@@ -48,7 +48,6 @@ router.get('/', function (req, res) {
 
 // process post requests to get the travel time to an object in space
 router.post('/', function (req, res) {
-    console.log(req.body);
     const time = travel_time(req.body.destination, req.body.vehicle)
     return res.status(200).json({"time_to_dest": time}).end();
 });
