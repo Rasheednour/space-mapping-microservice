@@ -43,7 +43,7 @@ function travel_time(destination, travel_method) {
 
 
 router.get('/', function (req, res) {
-    res.json(vehicles);
+    res.send("Space Mapping Microservice");
 });
 
 // process post requests to get the travel time to an object in space
