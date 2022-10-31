@@ -4,14 +4,14 @@ const express = require('express');
 const app = express();
 const router = express.Router();
 const space_objects = require('./space-objects');
+const vehicles = require('./vehicles');
 
 app.enable('trust proxy');
 
 
 router.get('/', function (req, res) {
-    res.json(space_objects);
+    res.json(vehicles);
 });
-
 
 
 app.use('/', router);
